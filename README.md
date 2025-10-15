@@ -14,7 +14,7 @@ A personal portfolio website built with ReactJS.
 
 1. Clone the repository:
     ```bash
-    git clone [https://github.com/yourusername/portfolio-reactjs.git](https://github.com/Sumeet0P/Portfolio.git)
+    git clone (https://github.com/Sumeet0P/Portfolio.git)
     ```
 2. Install dependencies:
     ```bash
