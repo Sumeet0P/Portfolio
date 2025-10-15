@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Merienda';
+  src: url('./fonts/Merienda-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chetta';
+  src: url('./fonts/ChettaVissto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luxuria';
+  src: url('./fonts/LuxuriousRoman-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jura';
+  src: url('./fonts/Jura-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.chetta {
+  font-family: 'Chetta', sans-serif;
+}
+
+.merienda {
+  font-family: 'Merienda', sans-serif;
+}
+
+.luxuria {
+  font-family: 'Luxuria', sans-serif;
+}
+
+.jura {
+  font-family: 'Jura', sans-serif;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+}
