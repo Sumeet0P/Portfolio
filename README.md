@@ -8,12 +8,13 @@ A personal portfolio website built with ReactJS.
 - Showcase projects
 - Contact form
 - About section
+- Education section
 
 ## Getting Started
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/portfolio-reactjs.git
+    git clone [https://github.com/yourusername/portfolio-reactjs.git](https://github.com/Sumeet0P/Portfolio.git)
     ```
 2. Install dependencies:
     ```bash
