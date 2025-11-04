@@ -20,14 +20,14 @@ const Contact = () => {
 
   return (
     <motion.footer
-      className="relative justify-center items-center contact p-8 text-center text-2xl"
+      className="relative flex flex-col justify-center items-center contact top-30 p-4 md:p-8 text-center responsive-text-2xl min-h-[50vh]"
       ref={counterRef}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <div className="absolute transform pt-16 left-95 -translate-y-1/2 w-1/12 z-0">
+      <div className="md:block absolute w-1/4 mb-40 transform md:pt-16 md:left-95 -translate-y-1/2 md:w-1/12 z-0">
         <Lottie
           lottieRef={lottieRef}
           animationData={ContactAnimation}
@@ -35,16 +35,18 @@ const Contact = () => {
           className="opacity-100"
         />
       </div>
-      <p><Typewriter
-                words={["Let's Connect!"]}
-                typeSpeed={120} // Faster typing
-                deleteSpeed={50} // Speed when deleting
-                delaySpeed={1500} // Delay before next word starts
-                loop={false}
-                cursor
-                cursorStyle="|"
-                cursorClassName="typewriter-cursor"
-              /></p>
+      <p>
+        <Typewriter
+          words={["Let's Connect!"]}
+          typeSpeed={120} // Faster typing
+          deleteSpeed={50} // Speed when deleting
+          delaySpeed={1500} // Delay before next word starts
+          loop={false}
+          cursor
+          cursorStyle="|"
+          cursorClassName="typewriter-cursor"
+        />
+      </p>
       <p className="relative">
         <a href="mailto:schauhan8886@gmail.com">
           Email: schauhan8886@gmail.com

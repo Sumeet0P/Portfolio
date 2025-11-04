@@ -8,14 +8,14 @@ import SkillAnimation from "../assets/developer skills.json";
 const About = () => {
   return (
     <motion.div
-      className="relative about min-h-screen flex flex-col items-center justify-evenly p-8"
+      className="relative about min-h-screen flex flex-col items-center justify-evenly p-4 md:p-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      {/* Left animation */}
-      <div className="absolute pb-12 left-50 top-1/2 transform -translate-y-1/2 w-1/4 z-0">
+      {/* Left animation - hidden on mobile */}
+      <div className="md:block absolute md:left-50 top-2/5 md:top-1/2 transform -translate-y-1/2 z-0 w-96 h-96">
         <Lottie
           animationData={ComputerAnimation}
           loop={true}
@@ -23,8 +23,8 @@ const About = () => {
         />
       </div>
 
-      {/* Right animation */}
-      <div className="absolute pt-48 right-50 top-1/2 transform -translate-y-1/2 w-1/4 z-0">
+      {/* Right animation - hidden on mobile */}
+      <div className="md:block absolute pt-48 md:right-50 top-1/2 transform -translate-y-1/2 w-96 h-96 z-0">
         <Lottie
           animationData={SkillAnimation}
           loop={true}
@@ -32,12 +32,12 @@ const About = () => {
         />
       </div>
 
-      <p className="z-10 text-8xl text-center">
+      <p className="z-10 responsive-text-8xl text-center">
         <Typewriter
           words={["About Me"]}
-          typeSpeed={120} // Faster typing
-          deleteSpeed={50} // Speed when deleting
-          delaySpeed={1500} // Delay before next word starts
+          typeSpeed={120}
+          deleteSpeed={50}
+          delaySpeed={1500}
           loop={false}
           cursor
           cursorStyle="|"
@@ -45,10 +45,10 @@ const About = () => {
         />
       </p>
 
-      <p className="z-10 text-5xl text-center">I Am a Full Stack Developer</p>
+      <p className="z-10 responsive-text-5xl text-center">I Am a Full Stack Developer</p>
 
-      <div className="z-10 text-5xl grid grid-cols-2 gap-8 items-center justify-center p-6 w-[85%]">
-        <div className="">
+      <div className="z-10 responsive-text-2xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-start justify-center p-4 md:p-6 w-full md:w-[85%]">
+        <div className="text-4xl">
           Technologies I Use:
           <ul className="text-2xl p-4 list-disc list-inside">
             <li>MongoDB.</li>
@@ -59,7 +59,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="text-4xl">
           <p className="">Programming Languages:</p>
           <ul className="text-2xl p-4 list-disc list-inside">
             <li>JavaScript</li>
