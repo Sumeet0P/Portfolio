@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Project = () => {
   return (
-    <motion.div 
+    <motion.div id="projects"
       className="projects min-h-screen flex flex-col items-center justify-evenly p-4 md:p-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

@@ -19,7 +19,7 @@ const Contact = () => {
   }, [isInView]);
 
   return (
-    <motion.footer
+    <motion.footer id="contact"
       className="relative flex flex-col justify-center items-center contact top-30 p-4 md:p-8 text-center responsive-text-2xl min-h-[50vh]"
       ref={counterRef}
       initial={{ opacity: 0 }}
@@ -53,12 +53,12 @@ const Contact = () => {
         </a>
       </p>
       <p className="relative">
-        <a target="_blank" href="https://github.com/Sumeet0P">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Sumeet0P">
           GitHub: github.com/Sumeet0P
         </a>
       </p>
       <p className="relative">
-        <a target="_blank" href="https://linkedin.com/in/sumeetchauhan37">
+        <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumeetchauhan37">
           LinkedIn: linkedin.com/in/sumeetchauhan37
         </a>
       </p>

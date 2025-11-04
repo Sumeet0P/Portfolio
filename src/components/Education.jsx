@@ -19,7 +19,7 @@ const Education = () => {
   }, [isInView]);
 
   return (
-    <motion.div
+    <motion.div id="education"
       ref={counterRef}
       className="relative education min-h-screen flex flex-col items-center justify-evenly p-4 md:p-8"
       initial={{ opacity: 0 }}

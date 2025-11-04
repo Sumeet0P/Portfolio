@@ -95,7 +95,7 @@ const Home = () => {
           </li>
         </ul>
       </motion.nav>
-      <motion.div
+      <motion.div id="home"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}

@@ -127,6 +127,8 @@ html {
   background-size: 400px 400px;
   animation: moveStars 60s linear infinite;
   opacity: 0.3;
+  /* allow pointer events to pass through the decorative star layer */
+  pointer-events: none;
 }
 
 @keyframes moveStars {
