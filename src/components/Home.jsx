@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import Lottie from "lottie-react";
+import AvatarAnimation from "../assets/Avatar.json"; // path to your file
 
 
 const Home = () => {
@@ -15,7 +17,8 @@ const Home = () => {
       </ul>
     </nav>
     <div className="home min-h-screen flex flex-col items-center justify-center p-8">
-      <p className="text-8xl chetta m-8">Sumeet Chauhan</p>
+      <Lottie animationData={AvatarAnimation} loop={true} className="w-96 h-96 " />
+      <p className="text-8xl chetta m-8 mt-0">Sumeet Chauhan</p>
     </div>
     </>
   )
