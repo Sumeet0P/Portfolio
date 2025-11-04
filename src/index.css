@@ -43,7 +43,22 @@
 
 body {
   font-family: 'Jura', sans-serif;
+  overflow-x: hidden;
 }
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* backdrop-filter: blur(8px); */
+  z-index: 1000;
+}
+
 
 /* Smooth fading cursor animation */
 .typewriter-cursor {
@@ -66,4 +81,27 @@ body {
         opacity: 1;
         text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
     }
+}
+
+.starfield {
+  background: radial-gradient(circle at 50% 50%, #101010 0%, #000000 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+                    radial-gradient(2px 2px at 100px 80px, #fff, transparent),
+                    radial-gradient(2px 2px at 200px 150px, #fff, transparent);
+  background-size: 400px 400px;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 400px 400px; }
 }

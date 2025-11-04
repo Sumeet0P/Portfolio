@@ -19,7 +19,7 @@ const About = () => {
         <Lottie
           animationData={ComputerAnimation}
           loop={true}
-          className="opacity-80 animate-pulse"
+          className="opacity-60 animate-pulse"
         />
       </div>
 
@@ -28,7 +28,7 @@ const About = () => {
         <Lottie
           animationData={SkillAnimation}
           loop={true}
-          className="opacity-80 animate-pulse"
+          className="opacity-60 animate-pulse"
         />
       </div>
 

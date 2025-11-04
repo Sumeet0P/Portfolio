@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <motion.nav
-        className="items-center bg-transparent justify-center text-2xl p-4 sticky top-0 z-50"
+        className="navbar flex items-center justify-center text-2xl p-4 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
