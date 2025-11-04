@@ -44,3 +44,26 @@
 body {
   font-family: 'Jura', sans-serif;
 }
+
+/* Smooth fading cursor animation */
+.typewriter-cursor {
+    animation: soft-blink 2s ease-in-out infinite;
+    color: #ffffff;
+    /* change to your accent color if you want */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    /* subtle glow */
+}
+
+@keyframes soft-blink {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+    }
+}
