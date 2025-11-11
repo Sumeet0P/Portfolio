@@ -59,7 +59,7 @@ const Education = () => {
         <div className="text-4xl">
           Relevant Coursework:
           <ul className="text-2xl pt-4">
-            <li>Data Structures and Algorithms.</li>
+            {/* <li>Data Structures and Algorithms.</li> */}
             <li>Web Development.</li>
             <li>Database Management.</li>
             <li>Software Engineering.</li>
