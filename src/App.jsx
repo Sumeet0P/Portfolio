@@ -52,7 +52,17 @@ const skillGroups = [
   {
     icon: "DV",
     title: "Development",
-    items: ["JavaScript", "Node.js", "Express.js", "React.js", "Next.js", "React Native", "HTML", "CSS", "Tailwind CSS"],
+    items: [
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "Next.js",
+      "React Native",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+    ],
   },
   {
     icon: "DT",
@@ -72,12 +82,14 @@ const additionalProjects = [
   {
     title: "Linktree Clone",
     stack: ["Next.js", "Tailwind CSS"],
-    summary: "Responsive profile link hub built with a clean interface and mobile-friendly layout.",
+    summary:
+      "Responsive profile link hub built with a clean interface and mobile-friendly layout.",
   },
   {
     title: "Task Manager Mobile App",
     stack: ["React Native"],
-    summary: "Mobile task management app focused on a straightforward, app-first experience.",
+    summary:
+      "Mobile task management app focused on a straightforward, app-first experience.",
   },
 ];
 
@@ -88,9 +100,9 @@ const experience = [
     organization: "Unicap Corporate Services Pvt. Ltd.",
     location: "Navi Mumbai",
     details: [
-      "Worked on web application development.",
-      "Debugged production systems.",
-      "Assisted in deployment workflows.",
+      "Developed and maintained web applications with a focus on performance and usability.",
+      "Diagnosed and resolved production-level issues, improving system stability.",
+      "Assisted in deployment workflows and environment configuration.",
     ],
   },
   {
@@ -113,7 +125,13 @@ const reveal = {
 
 function SectionHeading({ eyebrow, title, description }) {
   return (
-    <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className="section-heading">
+    <motion.div
+      variants={reveal}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="section-heading"
+    >
       <p className="eyebrow">{eyebrow}</p>
       <h2>{title}</h2>
       <p>{description}</p>
@@ -135,7 +153,7 @@ function App() {
           <span className="brand-dot" />
           <div>
             <p className="brand-name">Sumeet Chauhan</p>
-            <p className="brand-role">DevOps Engineer</p>
+            <p className="brand-role">Web Developer / DevOps Engineer</p>
           </div>
         </div>
 
@@ -161,19 +179,47 @@ function App() {
               Chembur, Mumbai
             </div>
             <h1>Sumeet Chauhan</h1>
-            <p className="hero-role">DevOps Engineer | Cloud & Kubernetes Enthusiast</p>
+            <p className="hero-role">
+              DevOps Engineer | Cloud & Kubernetes Enthusiast
+            </p>
             <p className="hero-summary">
-              Hands-on with cloud infrastructure, containerization, CI/CD pipelines, and Kubernetes deployments. Built automated deployment platforms using Terraform, Docker, Kubernetes, and GitOps practices, with experience in production deployments and server debugging.
+              DevOps-focused engineer experienced in building end-to-end cloud
+              deployment systems using Terraform, Docker, Kubernetes, and GitOps
+              workflows. Designed and deployed a fully automated platform that
+              takes applications from Git push to production using CI/CD
+              pipelines, Helm, and ArgoCD. Strong focus on infrastructure
+              automation, scalability, and real-world debugging in production
+              environments.
             </p>
             <div className="hero-actions">
-              <button type="button" className="action-button action-button-muted">
+              <a
+                href="https://github.com/Sumeet0P"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="action-button action-button-muted"
+              >
                 GitHub
-              </button>
-              <button type="button" className="action-button action-button-muted">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sumeetchauhan37"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="action-button action-button-muted"
+              >
                 LinkedIn
-              </button>
-              <a href="#contact" className="action-button action-button-primary">
+              </a>
+              <a
+                href="#contact"
+                className="action-button action-button-primary"
+              >
                 Contact
+              </a>
+              <a
+                href="./img/resume.pdf"
+                download
+                className="action-button action-button-primary"
+              >
+                Download Resume
               </a>
             </div>
           </div>
@@ -223,25 +269,33 @@ function App() {
               <div className="case-block">
                 <p className="case-label">Problem</p>
                 <p>
-                  Deployment work needed a more structured system across infrastructure provisioning, application packaging, and Kubernetes-based delivery.
+                  Deployment work needed a more structured system across
+                  infrastructure provisioning, application packaging, and
+                  Kubernetes-based delivery.
                 </p>
               </div>
               <div className="case-block">
                 <p className="case-label">Solution</p>
                 <p>
-                  Designed a GitOps-based deployment system that combined Terraform automation, Docker-based containerization, Helm-managed releases, and ArgoCD syncing.
+                  Designed a GitOps-based deployment system that combined
+                  Terraform automation, Docker-based containerization,
+                  Helm-managed releases, and ArgoCD syncing.
                 </p>
               </div>
               <div className="case-block">
                 <p className="case-label">Stack</p>
                 <p>
-                  Terraform, AWS EC2, Docker, Kubernetes (k3s), Helm, ArgoCD, GitHub Actions, and Traefik.
+                  Terraform, AWS EC2, Docker, Kubernetes (k3s), Helm, ArgoCD,
+                  GitHub Actions, and Traefik.
                 </p>
               </div>
               <div className="case-block">
                 <p className="case-label">Impact</p>
                 <p>
-                  Brought infrastructure automation, CI pipelines, deployment management, and ingress configuration into one cohesive delivery workflow.
+                  Reduced manual deployment effort by automating infrastructure
+                  provisioning and application delivery. Enabled consistent and
+                  repeatable deployments using GitOps principles, improving
+                  reliability and reducing configuration errors.
                 </p>
               </div>
             </div>
@@ -259,7 +313,17 @@ function App() {
             </div>
 
             <div className="badge-row">
-              {["Terraform", "AWS EC2", "Docker", "Kubernetes", "k3s", "Helm", "ArgoCD", "GitHub Actions", "Traefik"].map((item) => (
+              {[
+                "Terraform",
+                "AWS EC2",
+                "Docker",
+                "Kubernetes",
+                "k3s",
+                "Helm",
+                "ArgoCD",
+                "GitHub Actions",
+                "Traefik",
+              ].map((item) => (
                 <span key={item} className="tech-badge">
                   {item}
                 </span>
@@ -373,7 +437,9 @@ function App() {
                     className="terminal-line"
                   >
                     <p className="terminal-command">{line.command}</p>
-                    <p className="terminal-output">{"\u2192"} {line.output}</p>
+                    <p className="terminal-output">
+                      {"\u2192"} {line.output}
+                    </p>
                   </motion.div>
                 ))}
               </div>
@@ -396,7 +462,10 @@ function App() {
 
             <div className="timeline">
               {experience.map((item) => (
-                <div key={`${item.period}-${item.title}`} className="timeline-item">
+                <div
+                  key={`${item.period}-${item.title}`}
+                  className="timeline-item"
+                >
                   <div className="timeline-marker" />
                   <div className="timeline-content">
                     <p className="timeline-period">{item.period}</p>
@@ -460,15 +529,27 @@ function App() {
             <p className="eyebrow">Contact</p>
             <h2>Built to present like an engineering system.</h2>
             <p>
-              DevOps Engineer based in Chembur, Mumbai, with hands-on experience across cloud infrastructure, Kubernetes deployments, CI/CD pipelines, and production debugging.
+              DevOps Engineer based in Chembur, Mumbai, with hands-on experience
+              across cloud infrastructure, Kubernetes deployments, CI/CD
+              pipelines, and production debugging.
             </p>
             <div className="contact-actions">
-              <button type="button" className="action-button action-button-primary">
+              <a
+                href="https://github.com/Sumeet0P"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="action-button action-button-primary"
+              >
                 GitHub
-              </button>
-              <button type="button" className="action-button action-button-muted">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sumeetchauhan37"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="action-button action-button-muted"
+              >
                 LinkedIn
-              </button>
+              </a>
             </div>
           </motion.article>
         </section>
